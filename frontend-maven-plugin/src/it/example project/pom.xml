@@ -23,7 +23,7 @@
                             <goal>install-node-and-npm</goal>
                         </goals>
                         <configuration>
-                            <nodeVersion>v5.3.0</nodeVersion>
+                            <nodeVersion>v4.4.7</nodeVersion>
                             <npmVersion>3.3.12</npmVersion>
                         </configuration>
                     </execution>

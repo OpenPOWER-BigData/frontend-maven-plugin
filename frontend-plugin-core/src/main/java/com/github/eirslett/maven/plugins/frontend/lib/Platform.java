@@ -1,9 +1,20 @@
 package com.github.eirslett.maven.plugins.frontend.lib;
 
-enum Architecture { x86, x64;
-    public static Architecture guess(){
-        return System.getProperty("os.arch").contains("64") ? x64 : x86;
-    }
+//enum Architecture { x86, x64;
+//    public static Architecture guess(){
+//        return System.getProperty("os.arch").contains("64") ? x64 : x86;
+//    }
+//}
+enum Architecture {
+	x86, x64, ppc64le;
+	public static Architecture guess() {
+		String arch = System.getProperty("os.arch");
+		if (arch.equals("ppc64le")) {
+			return ppc64le;
+		} else {
+			return arch.contains("64") ? x64 : x86;
+		}
+	}
 }
 
 enum OS { Windows, Mac, Linux, SunOS;
