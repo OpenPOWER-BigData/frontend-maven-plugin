@@ -11,9 +11,7 @@
     "jspm": "~0.16.19",
     "karma": "~0.13.18",
     "karma-jasmine": "~0.3.6",
-    "karma-phantomjs-launcher": "~0.2.3",
-    "jasmine-core": "^2.4.1",
-    "phantomjs": "^1.9.19"
+    "jasmine-core": "^2.4.1"
   },
   "jspm": {
     "dependencies": {
